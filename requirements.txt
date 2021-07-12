@@ -1,0 +1,25 @@
+Django==3.2
+django-environ==0.4.5
+gunicorn==19.9.0
+honcho==1.0.1
+
+django-model-utils==4.1.1
+
+redis==3.5.3
+django-redis==5.0.0
+whitenoise==5.0.1
+
+djangorestframework==3.12.4
+django-filter==2.4.0
+
+djangorestframework-simplejwt==4.6.0
+
+django-cors-headers==3.6.0
+
+# linter
+flake8-colors
+flake8
+
+# for local env
+django-debug-toolbar==3.2.1
+django_extensions==3.1.3
