@@ -20,10 +20,10 @@ from django.conf.urls.static import static
 from django.conf import settings
 
 urlpatterns = [
-    path('', RedirectView.as_view(url="/dashboard/"), name='home'),
+    # path('', RedirectView.as_view(url="/"), name='home'),
     path('admin/', admin.site.urls),
 
-    path('/', include(('landing_page.landing_page.urls', 'landing_page.landing_page'), namespace='landing_page')),
+    path('', include(('landing_page.landing_page.urls', 'landing_page.landing_page'), namespace='landing_page')),
 
     # APPEND_NEW_URL #
 ]
